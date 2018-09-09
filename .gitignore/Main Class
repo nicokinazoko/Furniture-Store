@@ -1,0 +1,47 @@
+
+package pengusaha;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nico
+ */
+public class Pengusaha {
+
+    public static void main(String[] args) {
+        int pilih1;
+        int pilih2;
+        Scanner masuk = new Scanner(System.in);
+        do{System.out.println("Pilihan");
+        System.out.println("1. Toko");
+        System.out.println("2. Pemasok");
+        System.out.println("3. Pembeli");
+        System.out.print("Pilihan = ");
+        pilih1 = masuk.nextInt();
+        if(pilih1 == 1){
+            System.out.println("Pilihan Input Toko");
+        }
+        else
+        if(pilih1 == 2){
+            System.out.println("Pilihan Input Pemasok");
+        }
+        else
+        if(pilih1 == 3){
+            System.out.println("Pilihan Input Pembeli");
+        }
+        else{
+            System.out.println("Pilihan Salah");
+            System.out.println("Kembali ke Menu");
+            System.out.println("");
+        }
+            System.out.println("Apakah ingin Mengulang ? (1/0) ");    
+            System.out.print("Pilihan = ");
+            pilih2 = masuk.nextInt();
+            if(pilih2 == 0){
+                System.out.println("Terima Kasih telah Menggunakan Program ini");
+                System.exit(0);
+            }
+        }while(pilih1 < 1 || pilih1 > 2 || pilih2 == 1);
+    }
+    
+}
